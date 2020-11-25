@@ -1,0 +1,50 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>wrong password</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div class="container" style="width: 100%;margin: 0px;padding: 0px;">
+        	
+   
+   	<div style="background-color: #3b5998;" class="row ">
+    
+	<div style="display: inline-flex; margin-top: 0px; margin-left: 100px;" align="left"><img src="{% static 'images/logo.png' %}">
+		<button style="background-color:#19a219;  margin-top: 30px; margin-bottom: 20px; border-width: 0px; border-radius: 2px; color: white;">sign up</button>
+	</div>
+</div>
+	<div style="width: 100%; background-image: linear-gradient(#edf1f7, #d7e3f7, #cedaf0); height: 500px;padding: 100px;">
+		<center>
+			<form >  <div style=" border :solid 1px white; width: 50%; background-color: white;">
+			<h3 align="left" style="padding-left: 30px;"><b>Facebook Login</b></h3> <hr style="border-width: 3px; width: 530px; color: black;">    		
+				<div style="display: inline-block; padding-top:50px; ">
+            		<label for="username" >Login as:</label>&nbsp;&nbsp;&nbsp;
+	       			<input type="text" name="username" id="t1" ><br>
+	       			<span id="a"></span>
+				</div><br><br>
+				<div style="display: inline-block;">
+	       			<label for="Password" >Password  :</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+	       			<input type="Password" name="Password" id="t2" autocomplete="on"><br>
+	       			<span id="b"></span>
+				</div><br><br>
+				<input type="checkbox" name="c" ><font style="color: #1d3463;">keep me logged in
+					
+	       			<br>
+                       <input type="button" value="Log in" style="color: white; border-color:#074891;" class="btn btn-primary">&nbsp;&nbsp; <a href="#"  color: #1d3463;>or sign up for facebook</a><br>
+                       <a href="#"  color: #1d3463;>Forgotten password?</a>
+                       <br>
+                       &nbsp;&nbsp;&nbsp;&nbsp;
+	       			</div>
+	       		</form>
+		</center>
+	</div>
+</div>
+		
+
+</body>
+</html>
